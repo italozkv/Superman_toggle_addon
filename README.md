@@ -1,26 +1,157 @@
-🦸 Superman Toggle Addon
+# 🦸 Superman Toggle Addon
 
-Superman Toggle Addon é um addon para o mod Superman que melhora e expande a experiência de gameplay, trazendo mais controle, realismo e balanceamento para os poderes do jogador.
+![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)
+![Forge](https://img.shields.io/badge/Forge-47.4.10-orange)
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![Status](https://img.shields.io/badge/status-in%20development-yellow)
+![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
-✨ Principais funcionalidades
-⚙️ Sistema de toggle de habilidades
-Ative e desative poderes como voo e sprint com facilidade, dando mais controle ao jogador.
-✈️ Voo aprimorado baseado na Elytra
-Um novo sistema de voo mais fluido e realista:
-Movimento com inércia
-Aceleração progressiva
-Controle baseado na direção da câmera
-Sustentação estilo Superman (não cai como Elytra normal)
-⚡ Sistema de velocidade e boost
-Velocidade dinâmica baseada no movimento
-Boost ao usar sprint
-Sensação de voo rápido e cinematográfico
-☀️ Integração com energia solar
-O desempenho do voo e dos poderes varia conforme a carga solar do jogador:
-Mais energia = mais controle e poder
-Menos energia = voo mais limitado
-💥 Sistema de impacto
-Colisões em alta velocidade podem causar dano e efeitos, adicionando risco ao voo.
-🎮 Objetivo
+Addon avançado para o mod **Superman (2.1.5+)** que melhora controle, balanceamento e imersão dos poderes, sem modificar diretamente o mod original.
 
-O objetivo do addon é transformar o voo e os poderes do Superman em algo mais imersivo, balanceado e divertido, evitando o estilo de voo simples do modo criativo e trazendo uma experiência mais próxima de um “super-herói real”.
+---
+
+## 📖 Visão Geral
+
+O **Superman Toggle Addon** é um mod Forge para **Minecraft 1.20.1** que intercepta e aprimora sistemas do mod Superman, oferecendo:
+
+- Controle manual de habilidades  
+- Rebalanceamento completo de combate  
+- Sistema avançado de energia solar  
+- Melhorias visuais e animações  
+- Ajustes profundos de gameplay  
+
+---
+
+## ✨ Funcionalidades
+
+### 🎮 Controle de habilidades
+- Toggle de **super corrida** (`O`)  
+- Toggle de **voo por duplo toque no pulo**  
+- Controle manual dos poderes  
+
+---
+
+### ⚔️ Rebalanceamento de combate
+
+| Tipo        | Multiplicador | Dano mínimo |
+|------------|--------------|------------|
+| Mob        | 2.6x         | 1.5        |
+| Player     | 3.2x         | 2.0        |
+| Projétil   | 2.25x        | 1.5        |
+
+- Remove invulnerabilidade absoluta  
+- Aplica resistência controlada  
+- Garante dano mínimo  
+
+---
+
+### ☀️ Sistema de energia solar
+
+- Consumo contínuo por poderes ativos  
+- Dreno ao receber dano  
+- Recarga baseada em ambiente  
+
+#### 🏔️ Bônus por altitude
+- Y ≥ 300 → +0.01  
+- Y ≥ 500 → +0.02  
+- Y ≥ 1000 → +0.035  
+
+---
+
+### ❤️ Cura e fome
+- Cura solar reduzida (`0.35x`)  
+- Fome normal abaixo de Y 1000  
+- Saturação não infinita  
+
+---
+
+### 💥 Combate físico
+- Knockback reduzido e controlado  
+- Custo solar por ataque  
+- Durabilidade de armas aplicada  
+
+---
+
+### 🔥 Heat Vision customizada
+- Render totalmente substituído  
+- 🔴 Twin (vermelho)  
+- 🔵 Focused (azul)  
+- Colisão com blocos + efeitos visuais  
+
+---
+
+### 🧍 Animações
+- Nova pose de **LIFT**  
+- Mais natural e imersiva  
+
+---
+
+## ⚙️ Arquitetura
+
+### 📂 Core
+- `SupermanToggleAddon.java`
+- `CommonEvents.java`
+- `SupermanToggleConfig.java`
+- `SupermanReflection.java`
+
+### 🎨 Client
+- `ClientEvents.java`
+- `HeatVisionRenderOverride.java`
+- `LiftPoseOverride.java`
+
+---
+
+## 🔌 Dependências
+
+- Minecraft **1.20.1**
+- Forge **47.4+**
+- Mod **Superman 2.1.5+**
+
+---
+
+## 🧠 Integração
+
+O addon utiliza:
+- Eventos Forge  
+- Pacotes de rede  
+- Reflexão interna  
+
+⚠️ Pode quebrar se o mod Superman mudar internamente.
+
+---
+
+## 🔄 Fluxo técnico
+
+1. Tick inicia  
+2. Estado salvo  
+3. Addon intercepta  
+4. Recalcula:
+   - dano  
+   - energia  
+   - cura  
+   - fome  
+5. Cliente aplica efeitos  
+
+---
+
+## 🌍 Balanceamento
+
+- Superman forte, mas não invencível  
+- Energia limitada  
+- Regeneração reduzida  
+- Nether sem recarga solar  
+
+---
+
+## ⚠️ Limitações
+
+- Estado de corrida não persistente  
+- Dependência de reflexão  
+- Algumas mudanças são apenas visuais  
+
+---
+
+## 🛠️ Build
+
+```bash
+./gradlew build
