@@ -106,6 +106,7 @@ O **Superman Toggle Addon** é um mod Forge para **Minecraft 1.20.1** que interc
 - Minecraft **1.20.1**
 - Forge **47.4+**
 - Mod **Superman 2.1.5+**
+- Mod **[Superman 2.1.5+](https://www.curseforge.com/minecraft/mc-mods/superman-son-of-krypton)**
 
 ---
 
