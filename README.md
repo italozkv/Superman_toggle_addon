@@ -1,4 +1,4 @@
-# 🦸 Superman Toggle Addon
+# 🦸‍♂️ Kryptonian Control
 
 ![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)
 ![Forge](https://img.shields.io/badge/Forge-47.4.10-orange)
@@ -6,153 +6,259 @@
 ![Status](https://img.shields.io/badge/status-in%20development-yellow)
 ![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
 
-Addon avançado para o mod **Superman (2.1.5+)** que melhora controle, balanceamento e imersão dos poderes, sem modificar diretamente o mod original.
+# 🦸‍♂️ Kryptonian Control
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Minecraft-1.20.1-green?style=for-the-badge&logo=mojangstudios" />
+  <img src="https://img.shields.io/badge/Forge-47.x-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Superman_Mod-2.1.5+-blue?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Addon-Yes-success?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Performance-Optimized-brightgreen?style=for-the-badge" />
+</p>
+
+<p align="center">
+  ⚡ Transforme o gameplay kryptoniano em algo equilibrado, técnico e muito mais satisfatório
+</p>
 
 ---
 
-## 📖 Visão Geral
+## 🎥 Showcase
 
-O **Superman Toggle Addon** é um mod Forge para **Minecraft 1.20.1** que intercepta e aprimora sistemas do mod Superman, oferecendo:
+<p align="center">
+  <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" width="600" />
+</p>
 
-- Controle manual de habilidades  
-- Rebalanceamento completo de combate  
-- Sistema avançado de energia solar  
-- Melhorias visuais e animações  
-- Ajustes profundos de gameplay  
+> ⚠️ Substitua por gameplay real para aumentar MUITO o engajamento
 
 ---
 
-## ✨ Funcionalidades
+## 🔥 O que torna este addon único?
 
-### 🎮 Controle de habilidades
-- Toggle de **super corrida** (`O`)  
-- Toggle de **voo por duplo toque no pulo**  
-- Controle manual dos poderes  
+💡 Diferente de outros addons, este não apenas adiciona features — ele **reestrutura o sistema kryptoniano inteiro**:
 
----
-
-### ⚔️ Rebalanceamento de combate
-
-| Tipo        | Multiplicador | Dano mínimo |
-|------------|--------------|------------|
-| Mob        | 2.6x         | 1.5        |
-| Player     | 3.2x         | 2.0        |
-| Projétil   | 2.25x        | 1.5        |
-
-- Remove invulnerabilidade absoluta  
-- Aplica resistência controlada  
-- Garante dano mínimo  
+* ⚔️ Sistema de dano totalmente reclassificado por categorias reais
+* ☀️ Economia de energia solar com física e lógica mais realista
+* 🧠 Heurísticas inteligentes para detectar dano mágico (Ars Nouveau, Mana & Artifice, etc.) fileciteturn1file0
+* 🚫 Remoção da pseudo-invulnerabilidade "quebrada" do mod base
+* 🎯 Controle fino de knockback e combate
+* 🔥 Heat Vision agora funcional + performática
+* ⛰️ Progressão baseada em altitude (endgame real)
 
 ---
 
-### ☀️ Sistema de energia solar
+## 🧬 Sistema Kryptoniano Reescrito
 
-- Consumo contínuo por poderes ativos  
-- Dreno ao receber dano  
-- Recarga baseada em ambiente  
+### ⚔️ Novo sistema de dano
 
-#### 🏔️ Bônus por altitude
-- Y ≥ 300 → +0.01  
-- Y ≥ 500 → +0.02  
-- Y ≥ 1000 → +0.035  
+Agora o dano NÃO é genérico — ele é classificado:
 
----
+```diff
++ MAGIC
++ ENERGY_EXTREME
++ KRYPTONITE
++ PROJECTILE_SPECIAL
++ MELEE_PLAYER
++ EXPLOSIVE
+```
 
-### ❤️ Cura e fome
-- Cura solar reduzida (`0.35x`)  
-- Fome normal abaixo de Y 1000  
-- Saturação não infinita  
+### 🧠 Destaque: Dano mágico inteligente
 
----
+O addon detecta automaticamente magia via:
 
-### 💥 Combate físico
-- Knockback reduzido e controlado  
-- Custo solar por ataque  
-- Durabilidade de armas aplicada  
+* DamageType
+* Entidade
+* Namespace
+* NBT
 
----
+Compatível com:
 
-### 🔥 Heat Vision customizada
-- Render totalmente substituído  
-- 🔴 Twin (vermelho)  
-- 🔵 Focused (azul)  
-- Colisão com blocos + efeitos visuais  
+* Ars Nouveau
+* Mana and Artifice
+
+👉 Resultado: magia finalmente relevante contra kryptonianos
 
 ---
 
-### 🧍 Animações
-- Nova pose de **LIFT**  
-- Mais natural e imersiva  
+## ☀️ Sistema de Energia Solar (Overhaul)
+
+### 🔋 Consumo realista
+
+Cada ação consome energia:
+
+* ✈️ Voo (movimento + hover)
+* 🏃 Super running
+* 🔥 Heat vision (twin / focused)
+* 💨 Breath powers
+* 👁️ Visões (xray, night, hearing)
+
+### 🚫 Sistema anti-exploit
+
+* ❌ Sem ganho infinito de energia voando
+* ❌ Poderes desligam automaticamente em 0 energia fileciteturn1file0
+* ❌ Solar Flare bloqueado sem carga mínima
+
+### 🌎 Recarga dinâmica
+
+Baseado em:
+
+* Clima ☁️
+* Hora do dia 🌅
+* Bioma 🌳
+* Altitude ⛰️
+* Dimensão 🌌
+* Estações (Serene Seasons) 🍂
 
 ---
 
-## ⚙️ Arquitetura
+## ⛰️ Progressão por Altitude (Endgame)
 
-### 📂 Core
-- `SupermanToggleAddon.java`
-- `CommonEvents.java`
-- `SupermanToggleConfig.java`
-- `SupermanReflection.java`
+```diff
++ Y >= 1500 desbloqueia evolução permanente
+```
 
-### 🎨 Client
-- `ClientEvents.java`
-- `HeatVisionRenderOverride.java`
-- `LiftPoseOverride.java`
+* ❤️ +20 vida permanente
+* ⚡ Regeneração em alturas elevadas
+* ☀️ Bônus massivo de energia
 
----
-
-## 🔌 Dependências
-
-- Minecraft **1.20.1**
-- Forge **47.4+**
-- Mod **Superman 2.1.5+**
-- Mod **[Superman 2.1.5+](https://www.curseforge.com/minecraft/mc-mods/superman-son-of-krypton)**
+👉 Vira literalmente progressão de poder
 
 ---
 
-## 🧠 Integração
+## 🔥 Heat Vision 2.0
 
-O addon utiliza:
-- Eventos Forge  
-- Pacotes de rede  
-- Reflexão interna  
+<p align="center">
+  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="500" />
+</p>
 
-⚠️ Pode quebrar se o mod Superman mudar internamente.
+### 💡 Melhorias
+
+* 🔴 Twin (precisa e funcional)
+* 🔵 Focused (controle total)
+* ❌ Remove partículas pesadas
+* ⚡ Renderer otimizado
+
+### 🧪 Feature Única: Fundição em tempo real
+
+```diff
++ Smelting com heat vision
+```
+
+* Funciona com itens no chão
+* Usa receita de fornalha
+* Consome energia solar
+* Requer exposição contínua fileciteturn1file0
+
+---
+
+## 🛡️ Combate Balanceado
+
+### Antes:
+
+❌ Quase invulnerável
+
+### Agora:
+
+✔️ Resistente, mas vulnerável estrategicamente
+
+* Dano mínimo garantido
+* Bypass parcial de resistência
+* PvP mais justo
 
 ---
 
-## 🔄 Fluxo técnico
+## 🍗 Sistema de Fome Realista
 
-1. Tick inicia  
-2. Estado salvo  
-3. Addon intercepta  
-4. Recalcula:
-   - dano  
-   - energia  
-   - cura  
-   - fome  
-5. Cliente aplica efeitos  
+```diff
+- Superman ignorando fome ❌
++ Gameplay Minecraft normal ✔️
+```
+
+* Remove saturação artificial
+* Consumo real de comida
+* Regeneração equilibrada fileciteturn1file0
+
+---
+
+## 💥 Knockback & Combate Físico
+
+* 👊 Soco não lança mobs absurdamente
+* ⚙️ Knockback escalável
+* 🔧 Armas perdem durabilidade
+* ☀️ Ataques consomem energia
 
 ---
 
-## 🌍 Balanceamento
+## 🎮 HUD & Experiência do Jogador
 
-- Superman forte, mas não invencível  
-- Energia limitada  
-- Regeneração reduzida  
-- Nether sem recarga solar  
+### Nova HUD Solar
+
+* 📊 Barra compacta
+* ⚠️ Alertas persistentes (low / critical)
+* ❌ Remove HUD antiga poluída fileciteturn1file0
+
+### Feedback em tempo real
+
+* Super running ON/OFF
+* Energia crítica
 
 ---
+
+## 🧑‍💻 Arquitetura (Dev)
+
+```mermaid
+flowchart LR
+    Client -->|Packet| Server
+    Server --> DamageSystem
+    Server --> SolarSystem
+    Server --> ReflectionLayer
+    ReflectionLayer --> SupermanMod
+```
+
+---
+
+## ⚙️ Configuração
+
+```toml
+superman_toggle_addon-common.toml
+```
+
+Sistemas configuráveis:
+
+* ⚔️ combat_balance
+* ☀️ solar_energy
+* 🔥 heat_vision_smelting
+
+---
+
+## 🚀 Instalação
+
+```bash
+1. Instale Forge 47.x
+2. Instale Superman Mod 2.1.5+
+3. Coloque o addon na pasta /mods
+4. Inicie o jogo
+```
+
 
 ## ⚠️ Limitações
 
-- Estado de corrida não persistente  
-- Dependência de reflexão  
-- Algumas mudanças são apenas visuais  
+* Depende de reflexão (pode quebrar com updates)
+* Estado de super running não persiste
 
 ---
 
-## 🛠️ Build
+## 🧾 Resumo
 
-```bash
-./gradlew build
+Este addon transforma completamente o Superman:
+
+* ⚔️ Combate equilibrado
+* ☀️ Energia realista
+* 🧠 Sistemas inteligentes
+* 🎮 Gameplay mais desafiador
+
+---
+
+<p align="center">
+  💙 Feito para quem quer um Superman forte — mas não quebrado
+</p>
+
