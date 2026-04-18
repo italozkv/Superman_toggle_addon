@@ -16,9 +16,7 @@
 
 ## 🎥 Showcase
 
-<p align="center">
-  <img src="https://i.postimg.cc/W47jfhv9/Smelting.gif" width="600" />
-</p>
+[![Smelting](https://i.postimg.cc/4KnrY4nt/Smelting.gif)](https://postimg.cc/4KnrY4nt)
 
 
 ---
