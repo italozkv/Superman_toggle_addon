@@ -1,13 +1,5 @@
 # 🦸‍♂️ Kryptonian Control
 
-![Minecraft](https://img.shields.io/badge/Minecraft-1.20.1-green)
-![Forge](https://img.shields.io/badge/Forge-47.4.10-orange)
-![Version](https://img.shields.io/badge/version-1.0.0-blue)
-![Status](https://img.shields.io/badge/status-in%20development-yellow)
-![License](https://img.shields.io/badge/license-All%20Rights%20Reserved-red)
-
-# 🦸‍♂️ Kryptonian Control
-
 <p align="center">
   <img src="https://img.shields.io/badge/Minecraft-1.20.1-green?style=for-the-badge&logo=mojangstudios" />
   <img src="https://img.shields.io/badge/Forge-47.x-orange?style=for-the-badge" />
