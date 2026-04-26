@@ -116,7 +116,7 @@ Baseado em:
 ## 🔥 Heat Vision 2.0
 
 <p align="center">
-  <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" width="500" />
+  <img src="https://i.postimg.cc/W47jfhv9/Smelting.gif" width="500" />
 </p>
 
 ### 💡 Melhorias
